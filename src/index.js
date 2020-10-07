@@ -5,8 +5,8 @@ import Client from 'shopify-buy';
 import './app.css';
 
 const client = Client.buildClient({
-  storefrontAccessToken: '17863866dc94c90d15e8f1ea1a96d80f',
-  domain: 'cruisegang.myshopify.com'
+  storefrontAccessToken: '35c5c4114d1b21d50d2afd91bcd15959',
+  domain: 'piecesworld.myshopify.com'
 });
 
 ReactDOM.render(
