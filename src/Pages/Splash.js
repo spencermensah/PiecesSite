@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './landingStyle.css'
 import logo from './PIECES.png'
+import ReactPlayer from "react-player"
 
 class Splash extends Component {
   constructor() {
@@ -19,9 +20,17 @@ class Splash extends Component {
   render() {
     return (
 
-      <div class='example'>
+      <div>
         <a href="http://localhost:3000/#/Home">
-            <img id='logo'  src={logo} alt="loading..." />
+          <div id='logo'>
+            <ReactPlayer
+              url='video/piecesLoop.mp4'
+              muted={true}
+              playing={true}
+              width='100%'
+              height='70%'
+            />
+          </div>
         </a>
       </div>
     );
