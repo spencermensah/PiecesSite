@@ -2,12 +2,6 @@
  * ============================== */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
-html {
-  /* background-color: #e1e1e1; */
-  background-color: black;
-  background-size: cover;
-}
-
 *, *:before, *:after {
   box-sizing: border-box;
 }

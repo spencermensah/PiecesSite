@@ -13,23 +13,17 @@ class Splash extends Component {
   }
 
   componentWillMount() {
-
+    document.body.style.background= 'black';
   }
 
 
   render() {
     return (
 
-      <div>
+      <div className="landingBackground">
         <a href="http://localhost:3000/#/Home">
           <div id='logo'>
-            <ReactPlayer
-              url='video/piecesLoop.mp4'
-              muted={true}
-              playing={true}
-              width='100%'
-              height='70%'
-            />
+            <img src={logo} alt="loading..." />
           </div>
         </a>
       </div>

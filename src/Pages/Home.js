@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import Products from '../components/Products';
 import Cart from '../components/Cart';
 import Client from 'shopify-buy';
+import './App.css';
 
 const client = Client.buildClient({
-  storefrontAccessToken: '17863866dc94c90d15e8f1ea1a96d80f',
-  domain: 'cruisegang.myshopify.com'
+  storefrontAccessToken: '35c5c4114d1b21d50d2afd91bcd15959',
+  domain: 'piecesworld.myshopify.com'
 });
 
 class Home extends Component {
@@ -26,6 +27,7 @@ class Home extends Component {
   }
 
   componentWillMount() {
+    document.body.style.background= '#e1e1e1';
     client.checkout.create().then((res) => {
       this.setState({
         checkout: res,
