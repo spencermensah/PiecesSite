@@ -3,6 +3,7 @@ import Products from '../components/Products';
 import Cart from '../components/Cart';
 import Client from 'shopify-buy';
 import './App.css';
+import logo from './delayed2.gif'
 
 const client = Client.buildClient({
   storefrontAccessToken: '35c5c4114d1b21d50d2afd91bcd15959',
@@ -94,12 +95,15 @@ class Home extends Component {
     return (
       <div className="App">
 
-
           {!this.state.isCartOpen &&
             <div className="App__view-cart-wrapper">
               <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Cart</button>
             </div>
           }
+
+          <div id='logo'>
+            <img src={logo} alt="loading..." />
+          </div>
 
         <Products
           products={this.state.products}

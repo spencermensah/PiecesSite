@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './landingStyle.css'
-import logo from './PIECES.png'
+import logo from './delayed2.gif'
 import ReactPlayer from "react-player"
 
 class Splash extends Component {
