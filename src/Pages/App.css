@@ -22,6 +22,24 @@ body {
   background-color: black !important;
 }
 
+#basket {
+  height: auto;
+  width: 20%;
+  float: right;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  100% {transform: rotate(-360deg);}
+}
+
+#logoText {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 img {
   display: block;
   max-width: 100%;
