@@ -117,6 +117,11 @@ class Home extends Component {
           addVariantToCart={this.addVariantToCart}
         />
 
+        <br></br>
+        <h2 id="footer">Powered by Crea Cö</h2>
+        <h3 id="footer">Copyright © 2020 PIECES c/o Afican Youth rights reserved</h3>
+        <br></br>
+
         <Cart
           checkout={this.state.checkout}
           isCartOpen={this.state.isCartOpen}

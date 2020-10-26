@@ -23,6 +23,7 @@ class Products extends Component {
       <div className="Product-wrapper">
         {products}
       </div>
+
     );
   }
 }
