@@ -63,7 +63,7 @@ class Product extends Component {
       <div className="Product">
         {this.props.product.images.length ? <img className="Product__image" src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
 
-        <h5 className="Product__price">£{variant.price}</h5>
+        <h6 className="Product__price">£{variant.price}</h6>
 
         {variantSelectors}
 
