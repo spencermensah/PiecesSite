@@ -22,7 +22,7 @@ class Splash extends Component {
     return (
 
       <div className="landingBackground">
-        <a href="http://localhost:3000/#/Home">
+        <a href="http://piecesjeans.herokuapp.com/#/Home">
           <div id='logo'>
             <img src={logo} alt="loading..." />
           </div>
