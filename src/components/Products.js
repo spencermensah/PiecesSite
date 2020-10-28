@@ -7,6 +7,7 @@ class Products extends Component {
     let products = this.props.products.map((product) => {
       return (
         <div>
+
           <Product
             addVariantToCart={this.props.addVariantToCart}
             client={this.props.client}
@@ -20,10 +21,15 @@ class Products extends Component {
     });
 
     return (
-      <div className="Product-wrapper">
-        {products}
-      </div>
+      <div>
+        <div>
 
+        </div>
+        <div className="Product-wrapper">
+
+          {products}
+        </div>
+      </div>
     );
   }
 }

@@ -31,8 +31,16 @@
 
 
 #logo {
-  height: 70vh; /* Magic here */
   display: flex;
   justify-content: center;
   align-items: center;
+  Z-index: -1;
+}
+
+#logoText {
+
+  width: 50%;
+  position: absolute;
+  top: 35%;
+  left:25%;
 }

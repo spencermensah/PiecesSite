@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import VariantSelector from './VariantSelector';
+import ImagePicker from 'react-image-picker'
 
 class Product extends Component {
   constructor(props) {
@@ -9,8 +10,11 @@ class Product extends Component {
     this.props.product.options.forEach((selector) => {
       defaultOptionValues[selector.name] = selector.values[0].value;
     });
-    this.state = { selectedOptions: defaultOptionValues };
-
+    this.state = {
+      selectedOptions: defaultOptionValues,
+      image: this.props.product.images[0].src
+    };
+    this.onPick = this.onPick.bind(this)
     this.handleOptionChange = this.handleOptionChange.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
     this.findImage = this.findImage.bind(this);
@@ -26,11 +30,14 @@ class Product extends Component {
     return (image || primary).src;
   }
 
+  onPick(image) {
+    this.setState({image:image.src})
+  }
+
   handleOptionChange(event) {
     const target = event.target
     let selectedOptions = this.state.selectedOptions;
     selectedOptions[target.name] = target.value;
-    console.log(target);
 
     const selectedVariant = this.props.client.product.helpers.variantForOptions(this.props.product, selectedOptions)
 
@@ -59,9 +66,22 @@ class Product extends Component {
         />
       );
     });
+
+    //console.log(this.props.product.images.length);
+    var pictureOptions = []
+    for (var i = 0; i < this.props.product.images.length; i++) {
+      pictureOptions.push(this.props.product.images[i].src)
+    }
     return (
       <div className="Product">
-        {this.props.product.images.length ? <img className="Product__image" src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
+        {this.props.product.images.length ? <img className="Product__image" src={this.state.image} alt={`${this.props.product.title} product shot`}/> : null}
+
+        <div class="vertical-center">
+          <ImagePicker
+            images={pictureOptions.map((image, i) => ({src: image, value: i}))}
+            onPick={this.onPick}
+          />
+        </div>
 
         <h2 id="price">£{variant.price}</h2>
 

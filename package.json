@@ -8,6 +8,7 @@
     "react": "^16.13.1",
     "react-3d-viewer": "^1.0.12",
     "react-dom": "^16.13.1",
+    "react-image-picker": "^1.1.1",
     "react-picker": "^1.2.16",
     "react-player": "^2.3.1",
     "react-router-dom": "^5.2.0",
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "dev": "serve -s build",
-    "start": "serve -s build",
+    "start": "serve -s start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",

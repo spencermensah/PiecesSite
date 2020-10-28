@@ -109,7 +109,7 @@ class Home extends Component {
           </div>
             <img id='logoText' src={logoText} alt="loading..." />
 
-          <br/>
+
 
         <Products
           products={this.state.products}
