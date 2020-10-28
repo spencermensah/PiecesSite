@@ -114,7 +114,6 @@ class Home extends Component {
           <div id='logo'>
             <img src={logo} alt="loading..." />
           </div>
-            <img id='logoText' src={logoText} alt="loading..." />
 
               <div id='nav'>
                 <a href="http://piecesjeans.herokuapp.com/#/Gallery"><PhotoAlbumIcon  stroke={"grey"} stroke-width={0.5} style={{ fontSize: 100, padding: 20, color: "#faf6de" }}/></a>

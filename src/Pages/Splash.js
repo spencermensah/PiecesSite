@@ -26,7 +26,6 @@ class Splash extends Component {
           <div id='logo'>
             <img src={logo} alt="loading..." />
           </div>
-          <img id='logoText' src={logoText} alt="loading..." />
         </a>
       </div>
     );
