@@ -7,6 +7,10 @@ import logo from './delayed2.gif'
 import logoText from './LOGO.png'
 import logoIcon from './logoIcon.png'
 
+import PhotoAlbumIcon from '@material-ui/icons/PhotoAlbum';
+import HomeIcon from '@material-ui/icons/Home';
+import PhoneIcon from '@material-ui/icons/Phone';
+
 const client = Client.buildClient({
   storefrontAccessToken: '35c5c4114d1b21d50d2afd91bcd15959',
   domain: 'piecesworld.myshopify.com'
@@ -104,12 +108,19 @@ class Home extends Component {
             </div>
           }
 
+
+
+
           <div id='logo'>
             <img src={logo} alt="loading..." />
           </div>
             <img id='logoText' src={logoText} alt="loading..." />
 
-
+              <div id='nav'>
+                <a href="http://piecesjeans.herokuapp.com/#/Gallery"><PhotoAlbumIcon  stroke={"grey"} stroke-width={0.5} style={{ fontSize: 100, padding: 20, color: "#faf6de" }}/></a>
+                <a href="http://piecesjeans.herokuapp.com/#/Home"><HomeIcon stroke={"grey"} stroke-width={0.5} style={{ fontSize: 100, padding: 20, color: "#faf6de" }}/></a>
+                <a href="http://piecesjeans.herokuapp.com/#/About"><PhoneIcon stroke={"grey"} stroke-width={0.5} style={{ fontSize: 100, padding: 20, color: "#faf6de" }}/></a>
+              </div>
 
         <Products
           products={this.state.products}

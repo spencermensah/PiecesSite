@@ -7,6 +7,8 @@ import {
 
 import Home from "./Pages/Home"
 import Splash from "./Pages/Splash"
+import About from "./Pages/About"
+import Gallery from "./Pages/Gallery"
 
 class App extends Component {
   constructor() {
@@ -28,6 +30,8 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Splash} />
             <Route exact path="/Home" component={Home} />
+            <Route exact path="/About" component={About} />
+            <Route exact path="/Gallery" component={Gallery} />
           </div>
         </HashRouter>
       </div>

@@ -160,7 +160,10 @@ h5 {
 }
 
 #nav{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4%;
 }
 
 .App__view-cart-wrapper {
