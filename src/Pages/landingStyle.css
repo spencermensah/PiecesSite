@@ -35,6 +35,9 @@
   justify-content: center;
   align-items: center;
   Z-index: -1;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
 }
 
 #logo2 {

@@ -118,9 +118,9 @@ class Home extends Component {
           </div>
 
               <div id='nav'>
-                <a href="http://piecesjeans.herokuapp.com/#/Gallery"><PhotoAlbumIcon  stroke={"grey"} stroke-width={0.3} style={{ fontSize: 80, padding: 10, color: "#faf6de" }}/></a>
-                <a href="http://piecesjeans.herokuapp.com/#/Home"><HomeIcon stroke={"grey"} stroke-width={0.3} style={{ fontSize: 80, padding: 10, color: "#faf6de" }}/></a>
-                <a href="http://piecesjeans.herokuapp.com/#/About"><PhoneIcon stroke={"grey"} stroke-width={0.3} style={{ fontSize: 80, padding: 10, color: "#faf6de" }}/></a>
+                <a href="http://piecesjeans.herokuapp.com/#/Gallery"><PhotoAlbumIcon  stroke={"grey"} stroke-width={0.3} style={{ fontSize: 60, padding: 10, color: "#faf6de" }}/></a>
+                <a href="http://piecesjeans.herokuapp.com/#/Home"><HomeIcon stroke={"grey"} stroke-width={0.3} style={{ fontSize: 60, padding: 10, color: "#faf6de" }}/></a>
+                <a href="http://piecesjeans.herokuapp.com/#/About"><PhoneIcon stroke={"grey"} stroke-width={0.3} style={{ fontSize: 60, padding: 10, color: "#faf6de" }}/></a>
               </div>
 
               <div className="Product-wrapper">
