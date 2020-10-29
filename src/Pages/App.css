@@ -159,15 +159,23 @@ h5 {
   justify-content: center;
 }
 
+.video {
+  max-width: 900px;
+  margin: 80px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4%;
 }
 
 .App__view-cart-wrapper {
   float: right;
+  display: block;
 }
 
 .App__view-cart {
@@ -506,7 +514,6 @@ p {
 
 .player-wrapper {
   position: relative;
-  padding-top: 10% /* Player ratio: 100 / (1280 / 720) */
 }
 
 .react-player {

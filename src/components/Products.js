@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Product from './Product';
-import ReactPlayer from "react-player"
+
 
 class Products extends Component {
   render() {
@@ -25,8 +25,7 @@ class Products extends Component {
         <div>
 
         </div>
-        <div className="Product-wrapper">
-
+        <div className="video">
           {products}
         </div>
       </div>

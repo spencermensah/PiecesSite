@@ -37,6 +37,14 @@
   Z-index: -1;
 }
 
+#logo2 {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #logoText {
 
   width: 50%;

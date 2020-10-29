@@ -11,6 +11,8 @@ import PhotoAlbumIcon from '@material-ui/icons/PhotoAlbum';
 import HomeIcon from '@material-ui/icons/Home';
 import PhoneIcon from '@material-ui/icons/Phone';
 
+import ReactPlayer from "react-player"
+
 const client = Client.buildClient({
   storefrontAccessToken: '35c5c4114d1b21d50d2afd91bcd15959',
   domain: 'piecesworld.myshopify.com'
@@ -105,7 +107,7 @@ class Home extends Component {
             <div className="App__view-cart-wrapper">
               <br></br>
               <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}><img id='basket' src={logoIcon} alt="loading..." /></button>
-            </div>
+          </div>
           }
 
 
@@ -116,10 +118,24 @@ class Home extends Component {
           </div>
 
               <div id='nav'>
-                <a href="http://piecesjeans.herokuapp.com/#/Gallery"><PhotoAlbumIcon  stroke={"grey"} stroke-width={0.5} style={{ fontSize: 100, padding: 20, color: "#faf6de" }}/></a>
-                <a href="http://piecesjeans.herokuapp.com/#/Home"><HomeIcon stroke={"grey"} stroke-width={0.5} style={{ fontSize: 100, padding: 20, color: "#faf6de" }}/></a>
-                <a href="http://piecesjeans.herokuapp.com/#/About"><PhoneIcon stroke={"grey"} stroke-width={0.5} style={{ fontSize: 100, padding: 20, color: "#faf6de" }}/></a>
+                <a href="http://piecesjeans.herokuapp.com/#/Gallery"><PhotoAlbumIcon  stroke={"grey"} stroke-width={0.3} style={{ fontSize: 80, padding: 10, color: "#faf6de" }}/></a>
+                <a href="http://piecesjeans.herokuapp.com/#/Home"><HomeIcon stroke={"grey"} stroke-width={0.3} style={{ fontSize: 80, padding: 10, color: "#faf6de" }}/></a>
+                <a href="http://piecesjeans.herokuapp.com/#/About"><PhoneIcon stroke={"grey"} stroke-width={0.3} style={{ fontSize: 80, padding: 10, color: "#faf6de" }}/></a>
               </div>
+
+              <div className="Product-wrapper">
+                <div className='player-wrapper'>
+                  <ReactPlayer
+                    url="video/piecesLoop.mp4"
+                    muted={true}
+                    playing={true}
+                    width='100%'
+                    height='100%'
+                    loop={true}
+                  />
+                </div>
+              </div>
+
 
         <Products
           products={this.state.products}
